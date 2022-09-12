@@ -20,6 +20,6 @@ definitions:
       200:
         description: Application and API version
         schema:
-          title: Users
+          title: Products
           type: object
           $ref: '#/definitions/App'
