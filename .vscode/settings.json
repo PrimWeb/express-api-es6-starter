@@ -1,0 +1,29 @@
+{
+  "vscode-edge-devtools.defaultUrl": "https://qr.goodie.prim.dev",
+  "vscode-edge-devtools.headless": false,
+  "vscode-edge-devtools.showWorkers": true,
+  "vscode-edge-devtools.useHttps": true,
+  "vscode-edge-devtools.defaultEntrypoint": "",
+  "editor.quickSuggestions": {
+    "strings": "inline"
+  },
+  "editor.suggest.preview": true,
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "workbench.productIconTheme": "IntelliJ",
+  "workbench.startupEditor": "readme",
+  "workbench.colorTheme": "Monokai",
+  "workbench.preferredDarkColorTheme": "Visual Studio Monokai",
+  "workbench.preferredHighContrastColorTheme": "Solarized Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 4,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "scm.inputFontSize": 14,
+  "docker-compose.projectNames": [
+    "qr-redirect"
+  ],
+  "docker-compose.shell": "/bin/ash",
+  "docker-explorer.enableTelemetry": false,
+  "docker-explorer.showAzureRegistries": true
+}

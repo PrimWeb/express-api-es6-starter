@@ -1,14 +1,57 @@
 {
-  "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "type": "msedge",
+      "name": "Launch Microsoft Edge",
       "request": "launch",
-      "name": "Launch Debug Program",
-      "preLaunchTask": "build",
-      "program": "${workspaceFolder}/dist/index.js",
-      "sourceMaps": true,
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/nodemon"
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ],
+      "address": "localhost",
+      "url": "https://qr.goodie.prim.dev/",
+      "presentation": {
+        "hidden": true
+      }
+    },
+    {
+      "type": "msedge",
+      "name": "Launch Microsoft Edge in headless mode",
+      "request": "launch",
+      "runtimeArgs": [
+        "--headless",
+        "--remote-debugging-port=9222"
+      ],
+      "address": "localhost",
+      "url": "https://qr.goodie.prim.dev/",
+      "presentation": {
+        "hidden": true
+      }
+    },
+    {
+      "type": "vscode-edge-devtools.debug",
+      "name": "Open Edge DevTools",
+      "request": "attach",
+      "url": "https://qr.goodie.prim.dev/",
+      "hostname": "localhost",
+      "presentation": {
+        "hidden": true
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch Edge Headless and attach DevTools",
+      "configurations": [
+        "Launch Microsoft Edge in headless mode",
+        "Open Edge DevTools"
+      ]
+    },
+    {
+      "name": "Launch Edge and attach DevTools",
+      "configurations": [
+        "Launch Microsoft Edge",
+        "Open Edge DevTools"
+      ]
     }
   ]
 }
